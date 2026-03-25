@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silzazsyh.dev</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Syne:wght@400;600;700;800&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ── Background Atmosphere ─────────────────────────── -->
+<div class="bg-layer">
+    <div class="bg-blob-cyber"></div>
+    <div class="bg-blob-ai"></div>
+    <div class="bg-blob-mid"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-scanlines"></div>
+</div>
+
+<div class="content-wrap">
+
+    <!-- ══════════════════════════════════════════════
+         NAVBAR
+    ══════════════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-home">silzazsyh<span class="slash">/</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#projects" class="nav-link">projects</a>
+                <a href="#now"      class="nav-link">now</a>
+                <a href="#media"    class="nav-link">media</a>
+                <a href="#about"    class="nav-link">about</a>
+            </div>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#projects" class="nav-link">projects</a>
+        <a href="#now"      class="nav-link">now</a>
+        <a href="#media"    class="nav-link">media</a>
+        <a href="#about"    class="nav-link">about</a>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════ -->
+    <section id="home">
+        <div class="hero-pre">// hello, world</div>
+
+        <h1 class="hero-name">silzazsyh<span class="slash">/</span></h1>
+
+        <div class="hero-tagline">
+            <span class="hero-tag t-cyber">
+                <span class="sep">//</span>
+                <span class="label">cybersecurity student</span>
+            </span>
+            <span class="hero-tag t-ai">
+                <span class="sep">//</span>
+                <span class="label">AI enthusiast</span>
+            </span>
+            <span class="hero-tag">
+                <span class="sep">//</span>
+                <span>homelab tinkerer</span>
+            </span>
+        </div>
+
+        <div class="hero-ctas">
+            <a href="#projects" class="btn btn-cyber">view projects</a>
+            <a href="#about"    class="btn btn-ai">about me</a>
+            <a href="#now"      class="btn btn-ghost">what i'm up to</a>
+        </div>
+
+        <div class="hero-scroll">
+            scroll
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+ <!-- ══════════════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════════════ -->
+    <section id="projects">
+        <div class="section-inner">
+            <div class="reveal">
+                <div class="eyebrow ai">// build log</div>
+                <h2 class="section-heading">projects</h2>
+                <p class="section-lead">write-ups on homelab builds, security experiments, AI tinkering, and anything else i've documented along the way.
+                    <br/><br/>my intention here is to eventually have more detailed writeups available about whatever projects i work through.
+                </p>
+                <div class="projects-grid reveal-stagger">
+                    <article class="project-card glass hover-cyber">
+                        <div class="project-card-top">
+                            <span class="tag-pill cyber">homelab</span>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                        <h3 class="project-title">plex media server</h3>
+                        <p class="project-desc">my personal media server, running on ubuntu via docker compose</p>
+                        <div class="chip-row">
+                            <span class="chip">personal media</span>
+                            <span class="chip">docker</span>
+                            <span class="chip">linux</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass hover-ai">
+                        <div class="project-card-top">
+                            <span class="tag-pill ai">AI / ML</span>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                        <h3 class="project-title">self-hosted llm</h3>
+                        <p class="project-desc">experimenting with ollama/self-hosted AI tools [currently on the backburner; i don't have the gpu or use case to justify this]</p>
+                        <div class="chip-row">
+                            <span class="chip">ollama</span>
+                            <span class="chip">AI</span>
+                            <span class="chip">ML</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass hover-cyber">
+                        <div class="project-card-top">
+                            <span class="tag-pill cyber">learning</span>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                        <h3 class="project-title">tryhackme</h3>
+                        <p class="project-desc">working on a few tryhackme learning paths:
+                            <br/>- cyber security 101
+                            <br/>- soc level 1
+                            <br/>- jr pentester
+                        </p>
+                        <div class="chip-row">
+                            <span class="chip">soc analyst</span>
+                            <span class="chip">networking</span>
+                            <span class="chip">education</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Uses & Setup -->
+            <div class="reveal" style="margin-top: 1rem;">
+                <div class="uses-divider">
+                    <div class="uses-divider-line"></div>
+                    <span class="uses-divider-text">// uses &amp; setup</span>
+                    <div class="uses-divider-line"></div>
+                </div>
+                <p class="section-lead" style="margin-bottom: 2rem;">the gear, software, and services that power the homelab and daily workflow.</p>
+
+                <div class="uses-grid reveal-stagger">
+                    <div class="uses-card glass hover-cyber">
+                        <div class="uses-card-title">hardware</div>
+                        <div class="uses-item">minisforum nab9 plus</div>
+                        <div class="uses-item">[i9-12900k/32gb ddr4] </div>
+                        <div class="uses-item">raspberry pi 5</div>
+                        <div class="uses-item">2x16tb das</div>
+                    </div>
+                    <div class="uses-card glass hover-cyber">
+                        <div class="uses-card-title">services</div>
+                        <div class="uses-item">plex media server</div>
+                        <div class="uses-item">teamspeak 6</div>
+                        <div class="uses-item">-arr stack</div>
+                        <div class="uses-item">pihole</div>
+                    </div>
+                    <div class="uses-card glass hover-cyber">
+                        <div class="uses-card-title">software &amp; tools</div>
+                        <div class="uses-item">ubuntu [homelab]</div>
+                        <div class="uses-item">ubuntu server [pi]</div>
+                        <div class="uses-item">notion, obsidian</div>
+                        <div class="uses-item">vscode</div>
+                    </div>
+                    <div class="uses-card glass hover-cyber">
+                        <div class="uses-card-title">learning</div>
+                        <div class="uses-item">tryhackme</div>
+                        <div class="uses-item">hackthebox</div>
+                        <div class="uses-item">zerotomastery</div>
+                        <div class="uses-item">comptia (sec+/net+)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         NOW
+    ══════════════════════════════════════════════ -->
+    <section id="now">
+        <div class="section-inner">
+            <div class="reveal">
+                <div class="eyebrow cyber">// current status</div>
+                <h2 class="section-heading">now</h2>
+                <p class="section-lead">a living snapshot — what i'm studying, building, and paying attention to at the moment.</p>
+
+                <div class="terminal-window glass hover-cyber">
+                    <div class="terminal-bar">
+                        <div class="t-dot r"></div>
+                        <div class="t-dot y"></div>
+                        <div class="t-dot g"></div>
+                        <span class="t-title">silzazsyh@homelab:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="t-line">
+                            <span class="t-prompt">›</span>
+                            <span class="t-cmd">cat now.md</span>
+                        </div>
+                        <div class="t-line t-out">
+                            studying → <span class="cy">cybersecurity - sec+/net+ </span>
+                        </div>
+                        <div class="t-line t-out">
+                            exploring → <span class="ai">self-hosting, ai/ml</span>
+                        </div>
+                        <div class="t-line t-out">
+                            building → <span class="cy">-arr stack, notion, obsidian, opencloud, immich</span>
+                        </div>
+                        <div class="t-line t-out">
+                            reading → <span class="ai">dan brown novels</span>
+                        </div>
+                        <div class="t-line t-out">
+                            location → <span class="dm">est</span>
+                        </div>
+                        <div class="t-line" style="margin-top:0.3rem;">
+                            <span class="t-prompt">›</span>
+                            <span class="t-cursor"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="now-cards reveal-stagger">
+                    <div class="now-card glass hover-cyber">
+                        <div class="now-card-label cyber">currently studying</div>
+                        <div class="now-card-val">sec+/net+</div>
+                        <div class="now-card-sub">comptia certifications</div>
+                    </div>
+                    <div class="now-card glass hover-ai">
+                        <div class="now-card-label ai">AI focus</div>
+                        <div class="now-card-val">prompt engineering</div>
+                        <div class="now-card-sub">utilizing zerotomastery courseware for learning ai/ml prompt engineering</div>
+                    </div>
+                    <div class="now-card glass hover-cyber">
+                        <div class="now-card-label cyber">homelab</div>
+                        <div class="now-card-val">current project?</div>
+                        <div class="now-card-sub">working on pms automation via -arr stack, and implementing opencloud and immich for data/image/video backups</div>
+                    </div>
+                    <div class="now-card glass hover-ai">
+                        <div class="now-card-label ai">reading</div>
+                        <div class="now-card-val">dan brown novels</div>
+                        <div class="now-card-sub">it can't /all/ be studying, gotta find entertainment somewhere</div>
+                    </div>
+                    <div class="now-card glass hover-cyber">
+                        <div class="now-card-label cyber">other</div>
+                        <div class="now-card-val">all work, no play?</div>
+                        <div class="now-card-sub">also learning japanese, re-learning guitar, and playing through cyberpunk 2077 and grim dawn</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         MEDIA
+    ══════════════════════════════════════════════ -->
+    <section id="media">
+        <div class="section-inner">
+            <div class="reveal">
+                <div class="eyebrow cyber">// private access</div>
+                <h2 class="section-heading">media</h2>
+
+                <div class="media-grid">
+                    <div class="media-info">
+                        <h3>plex media server</h3>
+                        <p>// UNDER CONSTRUCTION // CHECK LATER FOR ACCESS //</p>
+                        <p>this is a private media server for friends and family. if you've been given access, log in below to browse the library or submit a request.</p>
+                        <p>not sure what to watch? browse the collection through plex, or use overseerr to request something new and i'll see if i can get it added.</p>
+
+                        <div class="media-services">
+                            <div class="service-row">
+                                <div class="svc-dot cyber"></div>
+                                <span>plex — stream movies &amp; TV</span>
+                            </div>
+                            <div class="service-row">
+                                <div class="svc-dot ai"></div>
+                                <span>overseerr — request new content</span>
+                            </div>
+                        </div>
+
+                       <!-- <a href="#" class="btn btn-cyber">open in new tab ↗</a> -->
+                        <p>// UNDER CONSTRUCTION // CHECK LATER FOR ACCESS //</p>
+                    </div>
+                    <!-- UNDER CONSTRUCTION // WILL BE IMPLEMENTED LATER 
+                    <div>
+                        <div class="media-frame glass hover-cyber">
+                            <div class="iframe-mock">
+                                <span class="iframe-mock-icon">⬡</span>
+                                <span>overseerr embed</span>
+                                <span style="font-size:0.62rem; color: var(--text-dim); letter-spacing:0.03em;">iframe loads here — replace src with your Overseerr URL</span>
+                            </div>
+                        </div>
+                    </div>
+                    UNDER CONSTRUCTION // WILL BE IMPLEMENTED LATER -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════════════ -->
+    <section id="about">
+        <div class="section-inner">
+            <div class="reveal">
+                <div class="eyebrow ai">// whoami</div>
+                <h2 class="section-heading">about</h2>
+
+                <div class="about-grid">
+                    <div class="about-body">
+                        <p>hi, i'm joey!</p>
+                        <p>at the moment, i'm studying cybersecurity and AI. most of my free time goes toward tinkering with my homelab, and working on this site to braindump whatever i'm working on (when i remember).</p>
+                        <p>when i'm not in a terminal (read: breaking my systems), i'm trying to learn more about web development, deep-diving music (discovery, as well as playing guitar), or gaming.</p>
+                        <div class="about-chips">
+                            <span class="about-chip">cybersecurity</span>
+                            <span class="about-chip">artificial intelligence</span>
+                            <span class="about-chip">homelab</span>
+                            <span class="about-chip">self-hosting</span>
+                            <span class="about-chip">networking</span>
+                            <!-- copy/paste the span to add more if i want -->
+                        </div>
+                    </div>
+
+                    <div class="about-photo-wrap">
+                        <div class="about-photo-box">
+                            <img src="img/profile.jpg" alt="profile photo">
+                        </div>
+                        <div class="about-frame"></div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="contact-section reveal">
+                    <h3>get in touch</h3>
+                    <p>questions, tech chat, discuss the price of butter in india? reach out.</p>
+                    <div class="contact-links">
+                        <!-- // MAYBE NOT USING? // <a href="mailto:placeholder@silzazsyh.dev" class="btn btn-cyber">✉&nbsp; placeholder@silzazsyh.dev</a> -->
+                        <a href="https://github.com/silzazsyh" class="btn btn-ghost">GitHub ↗</a>
+                        <a href="https://www.linkedin.com/in/jwmallon" class="btn btn-ghost">LinkedIn ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════════════ -->
+    <footer>
+        <span class="cy">silzazsyh</span><span style="color:var(--text-dim);">/</span>
+        &nbsp;·&nbsp; thx for visitng
+        &nbsp;·&nbsp; <span class="ai">© 2026</span>
+    </footer>
+
+</div><!-- /.content-wrap -->
+
+
+<script>
+    // ── Navbar scroll effect ──────────────────────────────
+    const navbar = document.getElementById('navbar');
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 24);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ── Mobile hamburger ──────────────────────────────────
+    const hamburger   = document.getElementById('hamburger');
+    const mobileMenu  = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', open);
+    });
+
+    document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            hamburger.classList.remove('open');
+        });
+    });
+
+    // ── Active nav link on scroll ─────────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-link');
+
+    const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                navLinks.forEach(link =>
+                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`)
+                );
+            }
+        });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+
+    sections.forEach(s => sectionObserver.observe(s));
+
+    // ── Scroll reveal ─────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+
+    const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>
